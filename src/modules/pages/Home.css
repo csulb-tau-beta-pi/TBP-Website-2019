@@ -1,0 +1,46 @@
+.home-inner {
+  flex: 1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url(../../assets/images/initiation-f2018.jpg);
+  background-position: center;
+  top: 0;
+  z-index: -1;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.75);
+  width: 100%;
+  height: 100%;
+}
+
+.caption {
+  width: 100%;
+  max-width: 100%;
+  position: absolute;
+  top: 38%;
+  z-index: 1;
+  color: white;
+  text-transform: uppercase;
+}
+
+.caption h1 {
+  font-size: 5rem;
+  font-family: "Nexa Bold";
+  letter-spacing: 0.2rem;
+  text-shadow: 0.1rem 0.1rem 0.8rem black;
+  padding-bottom: 1rem;
+}
+
+.caption h3 {
+  font-size: 2rem;
+  text-shadow: 0.1rem 0.1rem 0.5rem black;
+  padding-bottom: 1.6rem;
+}
+
+.btn-lg {
+  border-width: medium;
+  padding: 0.6rem 1.3rem;
+  font-size: 1.1rem;
+}

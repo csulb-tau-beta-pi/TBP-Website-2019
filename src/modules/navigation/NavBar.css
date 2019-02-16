@@ -1,0 +1,53 @@
+/*--- Navigation --*/
+.navbar {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 0.1rem;
+  background: rgba(0, 0, 0, 0.75) !important;
+}
+
+.navbar-brand img {
+  height: 3.5rem;
+}
+
+.navbar-nav li {
+  padding-right: 0.7rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+  padding-top: 0.8rem;
+}
+
+.navbar-dark .navbar-nav .nav-link.active {
+  border-bottom: 2px solid #ffa000;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #ffa000;
+}
+
+li.dropdown:hover > ul.dropdown-menu {
+  display: block;
+}
+
+.navbar-toggler-menu {
+  border-width: 0;
+}
+
+.navbar .dropdown-menu {
+  margin-top: 0px;
+  background-color: rgba(50, 50, 50, 1);
+  padding: 1rem;
+}
+.navbar .dropdown-menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.8rem;
+  text-transform: none;
+}
+
+.navbar .dropdown-menu a:hover {
+  color: #ffa000;
+}
