@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import { Button, Jumbotron } from "reactstrap";
 import "./Home.css";
+import "../../assets/fonts/FontStyles.css";
+import "../components/GlobalStyles.css";
 
 class Home extends Component {
   render() {
@@ -16,13 +17,15 @@ class Home extends Component {
         </div>
 
         <div className="caption text-center">
-          <h1>
+          <h1 className="nexa-bold">
             <span className="em1">CSULB</span> Tau Beta Pi
           </h1>
-          <h3>The Engineering Honor Society</h3>
-          <a className="btn btn-outline-light btn-lg" href="#about">
-            Get Started
-          </a>
+          <h3 className="nexa-light">The Engineering Honor Society</h3>
+          <Link to="/about">
+            <div className="nexa-light btn btn-outline-light btn-lg">
+              Get Started
+            </div>
+          </Link>
         </div>
       </div>
     );

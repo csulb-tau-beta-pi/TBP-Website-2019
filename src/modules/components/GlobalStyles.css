@@ -1,0 +1,19 @@
+h2 {
+  font-size: 4rem;
+  font-family: "Nexa Bold", Helvetica, sans-serif;
+  letter-spacing: 0.1rem;
+}
+
+.em1 {
+  color: #ffa000;
+}
+
+hr {
+  width: 80%;
+  border-color: rgba(0, 0, 0, 0.2);
+}
+
+.w-80 {
+  width: 80%;
+  margin: auto;
+}

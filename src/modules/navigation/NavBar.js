@@ -1,81 +1,113 @@
-import React, { Component } from "react";
+import React from "react";
 import {
   Collapse,
   Navbar,
   NavbarToggler,
   NavbarBrand,
   Nav,
-  NavItem,
-  NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem
+  NavItem
 } from "reactstrap";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./NavBar.css";
+import "../../assets/fonts/FontStyles.css";
 
-class NavBar extends Component {
+export default class Example extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {};
+
+    this.toggleNavbar = this.toggleNavbar.bind(this);
+    this.state = {
+      collapsed: true
+    };
   }
 
+  toggleNavbar() {
+    this.setState({
+      collapsed: !this.state.collapsed
+    });
+  }
   render() {
     return (
       <div>
-        <nav className="navbar navbar-expand-md navbar-dark fixed-top">
-          <Link to="/" style={linkStyle}>
-            <NavbarBrand>
+        <Navbar style={navbar} light expand="md">
+          <NavbarBrand className="mr-auto">
+            <NavLink to="/">
               <img
                 src={require("../../assets/images/icons/small-logo-chapter-yellow-white.png")}
-                style={logoStyle}
+                style={{ height: "3rem" }}
               />
-            </NavbarBrand>
-          </Link>
-          <NavbarToggler onClick={this.toggle} />
-          <div className="collapse navbar-collapse" id="navbarResponsive">
-            <ul className="navbar-nav ml-auto">
-              <Link to="/" style={linkStyle}>
-                <li className="nav-item">
-                  <a className="nav-link">Home</a>
-                </li>
-              </Link>
-              <Link to="/about" style={linkStyle}>
-                <li className="nav-item">
-                  <a className="nav-link">About</a>
-                </li>
-              </Link>
-              <Link to="/officers" style={linkStyle}>
-                <li className="nav-item">
-                  <a className="nav-link">Officers</a>
-                </li>
-              </Link>
-              <Link to="/initiation" style={linkStyle}>
-                <li className="nav-item">
-                  <a className="nav-link">Initiation</a>
-                </li>
-              </Link>
-              <Link to="/contact" style={linkStyle}>
-                <li className="nav-item">
-                  <a className="nav-link">Contact</a>
-                </li>
-              </Link>
-            </ul>
-          </div>
-        </nav>
+            </NavLink>
+          </NavbarBrand>
+          <NavbarToggler onClick={this.toggleNavbar} className="mr-2" />
+          <Collapse isOpen={!this.state.collapsed} navbar>
+            <Nav className="ml-auto" navbar>
+              <NavItem style={navItem}>
+                <NavLink
+                  exact
+                  to="/"
+                  className="link nexa-light"
+                  style={{ textDecoration: "none" }}
+                  activeStyle={{ color: "#ffa000" }}
+                >
+                  Home
+                </NavLink>
+              </NavItem>
+              <NavItem style={navItem}>
+                <NavLink
+                  to="/about"
+                  className="link nexa-light"
+                  style={{ textDecoration: "none" }}
+                  activeStyle={{ color: "#ffa000" }}
+                >
+                  About
+                </NavLink>
+              </NavItem>
+              <NavItem style={navItem}>
+                <NavLink
+                  to="/officers"
+                  className="link nexa-light"
+                  style={{ textDecoration: "none" }}
+                  activeStyle={{ color: "#ffa000" }}
+                >
+                  Officers
+                </NavLink>
+              </NavItem>
+              <NavItem style={navItem}>
+                <NavLink
+                  to="/initiation"
+                  className="link nexa-light"
+                  style={{ textDecoration: "none" }}
+                  activeStyle={{ color: "#ffa000" }}
+                >
+                  Initiation
+                </NavLink>
+              </NavItem>
+              <NavItem style={navItem}>
+                <NavLink
+                  to="/contact"
+                  className="link nexa-light"
+                  style={{ textDecoration: "none" }}
+                  activeStyle={{ color: "#ffa000" }}
+                >
+                  Contact
+                </NavLink>
+              </NavItem>
+            </Nav>
+          </Collapse>
+        </Navbar>
       </div>
     );
   }
 }
 
-export default NavBar;
-
-const logoStyle = {
-  height: "3rem"
+const navbar = {
+  textTransform: "uppercase",
+  fontWeight: 700,
+  fontSize: "0.9rem",
+  letterSpacing: "0.1rem",
+  backgroundColor: "rgba(0, 0, 0, 0.75)"
 };
 
-const linkStyle = {
-  outline: "none",
-  textDecoration: "none"
+const navItem = {
+  paddingRight: "1rem"
 };

@@ -1,0 +1,24 @@
+@font-face {
+  font-family: "Nexa Bold";
+  src: url("../fonts/NexaDemo-Bold.otf");
+}
+@font-face {
+  font-family: "Nexa Light";
+  src: url("../fonts/NexaDemo-Light.otf");
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Regular.ttf");
+}
+
+.nexa-bold {
+  font-family: "Nexa Bold";
+}
+
+.nexa-light {
+  font-family: "Nexa Light";
+}
+
+.montserrat {
+  font-family: "Montserrat";
+}
