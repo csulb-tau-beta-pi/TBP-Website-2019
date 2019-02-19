@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import "./Home.css";
-import "../../assets/fonts/FontStyles.css";
-import "../components/GlobalStyles.css";
+import "../../../assets/fonts/FontStyles.css";
+import "../../components/GlobalStyles.css";
 
 class Home extends Component {
   render() {

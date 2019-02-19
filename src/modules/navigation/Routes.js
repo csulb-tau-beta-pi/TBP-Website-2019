@@ -1,13 +1,11 @@
 import React, { Component } from "react";
-import { RouteComponentProps } from "react-router";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
-import { Alert } from "reactstrap";
+import { BrowserRouter, Route } from "react-router-dom";
 import NavBar from "./NavBar";
-import Home from "../pages/Home";
-import About from "../pages/About";
-import Officers from "../pages/Officers";
-import Initiation from "../pages/Initiation";
-import Contact from "../pages/Contact";
+import Home from "../pages/home/Home";
+import About from "../pages/about/About";
+import Officers from "../pages/officers/Officers";
+import Initiation from "../pages/initation/Initiation";
+import Contact from "../pages/contact/Contact";
 
 class Routes extends Component {
   constructor(props) {

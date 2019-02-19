@@ -38,7 +38,11 @@ export default class Example extends React.Component {
               />
             </NavLink>
           </NavbarBrand>
-          <NavbarToggler onClick={this.toggleNavbar} className="mr-2" />
+          <NavbarToggler
+            onClick={this.toggleNavbar}
+            style={{ backgroundColor: "#ffa000", color: "white" }}
+            className="mr-2"
+          />
           <Collapse isOpen={!this.state.collapsed} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem style={navItem}>
@@ -105,9 +109,11 @@ const navbar = {
   fontWeight: 700,
   fontSize: "0.9rem",
   letterSpacing: "0.1rem",
-  backgroundColor: "rgba(0, 0, 0, 0.75)"
+  backgroundColor: "rgba(0, 0, 0, .9)"
 };
 
 const navItem = {
-  paddingRight: "1rem"
+  paddingRight: "1rem",
+  paddingTop: "0.2rem",
+  paddingBottom: "0.2rem"
 };

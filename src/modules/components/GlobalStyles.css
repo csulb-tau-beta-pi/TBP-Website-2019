@@ -1,5 +1,5 @@
 h2 {
-  font-size: 4rem;
+  font-size: 4rem !important;
   font-family: "Nexa Bold", Helvetica, sans-serif;
   letter-spacing: 0.1rem;
 }
