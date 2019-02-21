@@ -72,5 +72,6 @@ const officerBio = {
 };
 
 const officerEmail = {
+  backgroundColor: "#DDDDDD",
   fontSize: ".8rem"
 };

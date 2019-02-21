@@ -29,7 +29,7 @@ export default class Example extends React.Component {
   render() {
     return (
       <div>
-        <Navbar style={navbar} light expand="md">
+        <Navbar style={navbar} fixed="top" light expand="md">
           <NavbarBrand className="mr-auto">
             <NavLink to="/">
               <img
@@ -111,7 +111,7 @@ const navbar = {
   fontSize: "0.9rem",
   letterSpacing: "0.1rem",
   backgroundColor: "rgba(0, 0, 0, .9)",
-  zIndex: 1
+  zIndex: 10
 };
 
 const navItem = {
