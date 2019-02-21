@@ -35,6 +35,7 @@ export default class Example extends React.Component {
               <img
                 src={require("../../assets/images/icons/small-logo-chapter-yellow-white.png")}
                 style={{ height: "3rem" }}
+                alt="CSULB Tau Beta Pi"
               />
             </NavLink>
           </NavbarBrand>
@@ -109,7 +110,8 @@ const navbar = {
   fontWeight: 700,
   fontSize: "0.9rem",
   letterSpacing: "0.1rem",
-  backgroundColor: "rgba(0, 0, 0, .9)"
+  backgroundColor: "rgba(0, 0, 0, .9)",
+  zIndex: 1
 };
 
 const navItem = {

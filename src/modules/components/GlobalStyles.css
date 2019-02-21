@@ -17,3 +17,10 @@ hr {
   width: 80%;
   margin: auto;
 }
+
+.page {
+  position: absolute;
+  top: 100px;
+  left: 0;
+  right: 0;
+}

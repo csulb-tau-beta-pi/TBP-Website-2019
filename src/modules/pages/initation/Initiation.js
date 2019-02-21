@@ -7,7 +7,7 @@ class Initiation extends Component {
   }
   render() {
     return (
-      <div>
+      <div className="page">
         <p>Initiation</p>
       </div>
     );

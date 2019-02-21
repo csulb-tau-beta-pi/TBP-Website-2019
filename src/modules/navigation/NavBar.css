@@ -1,6 +1,7 @@
 /*--- Navigation --*/
 
 .link {
+  border: 0;
   color: white;
   text-decoration: "none";
 }

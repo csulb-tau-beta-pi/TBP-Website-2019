@@ -45,7 +45,8 @@ const OfficerCards = props => {
 export default OfficerCards;
 
 const cardStyle = {
-  marginTop: "1.5rem"
+  marginTop: "1.5rem",
+  boxShadow: "1px 2px 6px rgba(0,0,0,0.1)"
 };
 
 const officerName = {

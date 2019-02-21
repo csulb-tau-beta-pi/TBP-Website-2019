@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
 import "./About.css";
 import "../../../assets/fonts/FontStyles.css";
 import "../../components/GlobalStyles.css";
@@ -7,7 +6,7 @@ import "../../components/GlobalStyles.css";
 class About extends Component {
   render() {
     return (
-      <div>
+      <div className="page">
         <div class="col-12 narrow text-center">
           <hr />
           <h2>

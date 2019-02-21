@@ -137,15 +137,17 @@ class Officers extends Component {
       );
     });
     return (
-      <div className="w-80">
-        <Container fluid>
-          <hr />
-          <h2>
-            Meet our <span class="em1">Officers</span>
-          </h2>
-          <hr />
-          <Row>{officerCards}</Row>
-        </Container>
+      <div className="page">
+        <div className="w-80">
+          <Container fluid>
+            <hr />
+            <h2>
+              Meet our <span class="em1">Officers</span>
+            </h2>
+            <hr />
+            <Row>{officerCards}</Row>
+          </Container>
+        </div>
       </div>
     );
   }
