@@ -32,6 +32,7 @@ hr {
 
 .page {
   position: absolute;
+  padding-top: 4rem;
   left: 0;
   right: 0;
 }
@@ -46,4 +47,11 @@ hr {
   padding-top: 3rem;
   padding-bottom: 3rem;
   background-color: white;
+}
+
+@media (max-width: 991px) {
+  .w-80 {
+    width: 100%;
+    margin: auto;
+  }
 }

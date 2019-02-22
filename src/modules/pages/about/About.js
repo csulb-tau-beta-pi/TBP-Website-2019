@@ -5,8 +5,10 @@ import {
   Card,
   CardText,
   CardBody,
-  CardFooter,
-  CardTitle
+  CardTitle,
+  Container,
+  Row,
+  Col
 } from "reactstrap";
 import "../../../assets/fonts/FontStyles.css";
 import "../../components/GlobalStyles.css";
@@ -107,45 +109,64 @@ class About extends Component {
             </div>
           </div>
         </div>
-
         <div className="section-white">
           <div className="w-80">
             <div className="col-12 narrow text-left">
               <hr />
               <h3>Chants & Yells</h3>
               <hr />
-              <Card body>
-                <CardBody>
-                  <CardTitle>Preamble</CardTitle>
-                  <CardText>
-                    “The Tau Beta Pi Association was founded at Lehigh
-                    University in 1885 by Edward Higginson Williams, Jr., to
-                    mark in a fitting manner those who have conferred honor upon
-                    their Alma Mater by distinguished scholarship and exemplary
-                    character as students in engineering, or by their attainment
-                    as alumni in the field of engineering, and to foster a
-                    spirit of liberal culture in engineering colleges.”
-                  </CardText>
-                </CardBody>
-              </Card>
-              <Card body>
-                <CardBody>
-                  <CardTitle>Traditional Yell</CardTitle>
-                  <CardText>
-                    “Ammeter, Indicator, Wye Level Wye. Slide Rule, Dynamo, Tau
-                    Beta Pi!”
-                  </CardText>
-                </CardBody>
-              </Card>
-              <Card body>
-                <CardBody>
-                  <CardTitle>Modern Yell</CardTitle>
-                  <CardText>
-                    “Calculate, Innovate, Try Try Try. Integrity, Honesty, Tau
-                    Beta Pi!”
-                  </CardText>
-                </CardBody>
-              </Card>
+              <Container fluid>
+                <Row>
+                  <Col lg="4">
+                    <Card body>
+                      <CardBody>
+                        <CardTitle>
+                          <h4>Preamble</h4>
+                        </CardTitle>
+                        <hr />
+                        <CardText>
+                          “The Tau Beta Pi Association was founded at Lehigh
+                          University in 1885 by Edward Higginson Williams, Jr.,
+                          to mark in a fitting manner those who have conferred
+                          honor upon their Alma Mater by distinguished
+                          scholarship and exemplary character as students in
+                          engineering, or by their attainment as alumni in the
+                          field of engineering, and to foster a spirit of
+                          liberal culture in engineering colleges.”
+                        </CardText>
+                      </CardBody>
+                    </Card>
+                  </Col>
+                  <Col lg="4">
+                    <Card body>
+                      <CardBody>
+                        <CardTitle>
+                          <h4>Traditional Yell</h4>
+                        </CardTitle>
+                        <hr />
+                        <CardText>
+                          “Ammeter, Indicator, Wye Level Wye. Slide Rule,
+                          Dynamo, Tau Beta Pi!”
+                        </CardText>
+                      </CardBody>
+                    </Card>
+                  </Col>
+                  <Col lg="4">
+                    <Card body>
+                      <CardBody>
+                        <CardTitle>
+                          <h4>Modern Yell</h4>
+                        </CardTitle>
+                        <hr />
+                        <CardText>
+                          “Calculate, Innovate, Try Try Try. Integrity, Honesty,
+                          Tau Beta Pi!”
+                        </CardText>
+                      </CardBody>
+                    </Card>
+                  </Col>
+                </Row>
+              </Container>
             </div>
           </div>
         </div>
