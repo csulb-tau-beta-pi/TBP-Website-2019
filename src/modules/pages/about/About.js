@@ -10,6 +10,7 @@ import {
   Row,
   Col
 } from "reactstrap";
+import Footer from "../../components/Footer";
 import "../../../assets/fonts/FontStyles.css";
 import "../../components/GlobalStyles.css";
 import "./About.css";
@@ -118,7 +119,7 @@ class About extends Component {
               <Container fluid>
                 <Row>
                   <Col lg="4">
-                    <Card body>
+                    <Card body className="h-100">
                       <CardBody>
                         <CardTitle>
                           <h4>Preamble</h4>
@@ -138,7 +139,7 @@ class About extends Component {
                     </Card>
                   </Col>
                   <Col lg="4">
-                    <Card body>
+                    <Card body className="h-100">
                       <CardBody>
                         <CardTitle>
                           <h4>Traditional Yell</h4>
@@ -148,11 +149,15 @@ class About extends Component {
                           “Ammeter, Indicator, Wye Level Wye. Slide Rule,
                           Dynamo, Tau Beta Pi!”
                         </CardText>
+                        <p style={{ fontSize: ".6rem", textAlign: "right" }}>
+                          Adopted in 1908 <br />
+                          Written by R.C. Matthews, IL A '02
+                        </p>
                       </CardBody>
                     </Card>
                   </Col>
                   <Col lg="4">
-                    <Card body>
+                    <Card body className="h-100">
                       <CardBody>
                         <CardTitle>
                           <h4>Modern Yell</h4>
@@ -162,6 +167,10 @@ class About extends Component {
                           “Calculate, Innovate, Try Try Try. Integrity, Honesty,
                           Tau Beta Pi!”
                         </CardText>
+                        <p style={{ fontSize: ".6rem", textAlign: "right" }}>
+                          Adopted in 1978 <br />
+                          Written by H.F. Klos Jr., PA Z '78
+                        </p>
                       </CardBody>
                     </Card>
                   </Col>
@@ -170,6 +179,7 @@ class About extends Component {
             </div>
           </div>
         </div>
+        <Footer />
       </div>
     );
   }
