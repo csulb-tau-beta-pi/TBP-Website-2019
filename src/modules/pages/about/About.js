@@ -13,7 +13,6 @@ import {
 import Footer from "../../components/Footer";
 import "../../../assets/fonts/FontStyles.css";
 import "../../components/GlobalStyles.css";
-import "./About.css";
 
 class About extends Component {
   render() {
@@ -56,6 +55,7 @@ class About extends Component {
               <hr />
               <h3>Code of Ethics of Engineers</h3>
               <hr />
+              <br />
               <h4>The Fundamental Principles</h4>
               <p>
                 Engineers uphold and advance the integrity, honor, and dignity
