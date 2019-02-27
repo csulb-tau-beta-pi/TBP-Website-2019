@@ -79,12 +79,12 @@ export default class Example extends React.Component {
               </NavItem>
               <NavItem style={navItem}>
                 <NavLink
-                  to="/initiation"
+                  to="/join"
                   className="link nexa-light"
                   style={{ textDecoration: "none" }}
                   activeStyle={{ color: "#ffa000" }}
                 >
-                  Initiation
+                  Join
                 </NavLink>
               </NavItem>
               <NavItem style={navItem}>

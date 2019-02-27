@@ -13,7 +13,7 @@ import {
 import "../../../assets/fonts/FontStyles.css";
 import "../../components/GlobalStyles.css";
 
-class Initiation extends Component {
+class Join extends Component {
   render() {
     return (
       <div className="page">
@@ -50,21 +50,12 @@ class Initiation extends Component {
                             </li>
                             <ul>
                               <li>Initiation Fee: $125</li>
-                            </ul>
-                            <li style={{ fontWeight: "bold" }}>
-                              Induction Requirement
-                            </li>
-                            <ul>
-                              <li>
-                                <li>Polish Individual Bent</li>
-                                <li>Polish Big Bent</li>
-                                <li>Attend an event/workshop</li>
-                                <li>
-                                  Volunteer for community service (1 hour)
-                                </li>
-                                <li>Sign up and attend Officer Interview</li>
-                                <li>Attend Tau Beta Pi Induction Ceremony</li>
-                              </li>
+                              <li>Polish Individual Bent</li>
+                              <li>Polish Big Bent</li>
+                              <li>Attend an event/workshop</li>
+                              <li>Volunteer for community service (1 hour)</li>
+                              <li>Sign up and attend Officer Interview</li>
+                              <li>Attend Tau Beta Pi Induction Ceremony</li>
                             </ul>
                           </ul>
                         </CardText>
@@ -132,8 +123,8 @@ class Initiation extends Component {
                 </ul>
                 <br />
                 These fractions are approximated to 3.4 GPA for juniors and 3.2
-                for seniors. TBP Theta Chapter will look at the GPA requirement
-                to determine your eligibility.
+                GPA for seniors. TBP Theta Chapter will look at the GPA
+                requirement to determine your eligibility.
                 <br /> <br />
                 An invitation will be sent to your
                 <span style={{ fontWeight: "bold" }}> CSULB Student</span> email
@@ -203,7 +194,7 @@ class Initiation extends Component {
                 </ListGroup>
                 <br />
                 <br />
-                If you cannot pay the full cost upfront, talk to one of our
+                If you cannot pay the full cost upfront, contact one of our
                 officers for alternate payment options.{" "}
                 <span style={{ fontWeight: "bold" }}>
                   Do not delay your TBP Initiation.
@@ -229,7 +220,7 @@ class Initiation extends Component {
   }
 }
 
-export default Initiation;
+export default Join;
 
 const divSideDecoration = {
   fontSize: "1.2rem",

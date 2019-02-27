@@ -4,7 +4,7 @@ import NavBar from "./NavBar";
 import Home from "../pages/home/Home";
 import About from "../pages/about/About";
 import Officers from "../pages/officers/Officers";
-import Initiation from "../pages/initation/Initiation";
+import Join from "../pages/join/Join";
 import Contact from "../pages/contact/Contact";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 import "./Routes.css";
@@ -30,7 +30,7 @@ class Routes extends Component {
                     <Route exact path="/" component={Home} />
                     <Route path="/about" component={About} />
                     <Route path="/officers" component={Officers} />
-                    <Route path="/initiation" component={Initiation} />
+                    <Route path="/join" component={Join} />
                     <Route path="/contact" component={Contact} />
                   </Switch>
                 </CSSTransition>
