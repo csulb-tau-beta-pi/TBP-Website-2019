@@ -116,6 +116,7 @@ class About extends Component {
               <hr />
               <h3>Chants & Yells</h3>
               <hr />
+              <br />
               <Container fluid>
                 <Row>
                   <Col lg="4">

@@ -41,7 +41,6 @@ class Join extends Component {
                               Eligibility Requirement
                             </li>
                             <ul>
-                              <li>Student at CSULB</li>
                               <li>Juniors: 3.4 GPA</li>
                               <li>Seniors: 3.2 GPA</li>
                             </ul>
@@ -98,11 +97,14 @@ class Join extends Component {
                   </Col>
                 </Row>
                 <div>
-                  <Card style={divSideDecoration} className="nexa-light">
+                  <p
+                    style={{ fontSize: 20, width: "80%", margin: "auto" }}
+                    className="nexa-light"
+                  >
                     A signature sheet will be given after paying the initiation
                     fee. Initiates are required to complete the signature sheet
                     by the day of the Induction Ceremony.
-                  </Card>
+                  </p>
                 </div>
               </Container>
             </div>
@@ -202,16 +204,38 @@ class Join extends Component {
                 The initiation fee is required before you can participate in the
                 required tasks before induction.
               </p>
-            </div>
-          </div>
-        </div>
-        <div className="section-gray">
-          <div className="w-80">
-            <div className="col-12 narrow text-left">
-              <hr />
-              <h3>Induction</h3>
-              <hr />
-              <br />
+              <h4>Bent Polishing</h4>
+              <p>
+                Each candidate must polish a personal bent before being admitted
+                into Tau Beta Pi.
+                <br />
+                <br />
+                You will most likely spend the majority of the time polishing
+                your bent during the initiation period. Here are some
+                suggestions for polishing the bent:
+                <br />
+                <ul>
+                  <li>
+                    Use a metal file to smooth out the rough surfaces and remove
+                    any extra material along the edges. An emery board (nail
+                    file) can also be used and works satisfactorily. No
+                    machinery may be used.
+                  </li>
+                  <li>
+                    After filing, use sandpaper starting with medium (200 grit)
+                    and progress towards 320, 400, and continue up until 2000 or
+                    2500 grit sandpaper.
+                  </li>
+                  <li>
+                    A mirror-like finish can be obtained by using a metal polish
+                    (the best is Mothers Billet Metal Polish).
+                  </li>
+                </ul>
+                Polishing the bent can be frustrating and time consuming if not
+                done properly. Candidates are encouraged to come to the Tau Beta
+                Pi office or speak with any member for assistance or
+                suggestions. This should be a memorable and fun experience.
+              </p>
             </div>
           </div>
         </div>
