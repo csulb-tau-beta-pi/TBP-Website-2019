@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Container, Row, Col } from "reactstrap";
 import OfficerCard from "./OfficerCard";
 import OfficerList from "./OfficerList";
+import Footer from "../../components/Footer";
 
 const officerList = OfficerList;
 
@@ -28,6 +29,7 @@ class Officers extends Component {
             </Container>
           </div>
         </div>
+        <Footer />
       </div>
     );
   }

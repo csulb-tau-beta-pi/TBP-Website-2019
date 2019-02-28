@@ -12,6 +12,7 @@ import {
 } from "reactstrap";
 import "../../../assets/fonts/FontStyles.css";
 import "../../components/GlobalStyles.css";
+import Footer from "../../components/Footer";
 
 class Join extends Component {
   render() {
@@ -239,6 +240,7 @@ class Join extends Component {
             </div>
           </div>
         </div>
+        <Footer />
       </div>
     );
   }

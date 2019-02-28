@@ -28,10 +28,6 @@ p {
   color: #ffa000;
 }
 
-hr {
-  border-color: rgba(0, 0, 0, 0.2) !important;
-}
-
 .w-80 {
   width: 80%;
   margin: auto;
