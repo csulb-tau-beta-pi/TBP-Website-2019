@@ -3,14 +3,14 @@ import Footer from "../../components/Footer";
 import "../../../assets/fonts/FontStyles.css";
 import "../../components/GlobalStyles.css";
 
-class Members extends Component {
+class Eligibles extends Component {
   render() {
     return (
       <div className="page">
-        <p>Members</p>
+        <p>Eligibles</p>
       </div>
     );
   }
 }
 
-export default Members;
+export default Eligibles;

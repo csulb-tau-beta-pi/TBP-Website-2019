@@ -5,7 +5,11 @@ import {
   NavbarToggler,
   NavbarBrand,
   Nav,
-  NavItem
+  NavItem,
+  UncontrolledDropdown,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem
 } from "reactstrap";
 import { NavLink } from "react-router-dom";
 import "./NavBar.css";
@@ -54,7 +58,7 @@ export default class Example extends React.Component {
                   style={{ textDecoration: "none" }}
                   activeStyle={{ color: "#ffa000" }}
                 >
-                  Home
+                  <div style={{ margin: 8 }}>Home</div>
                 </NavLink>
               </NavItem>
               <NavItem style={navItem}>
@@ -64,19 +68,62 @@ export default class Example extends React.Component {
                   style={{ textDecoration: "none" }}
                   activeStyle={{ color: "#ffa000" }}
                 >
-                  About
+                  <div style={{ margin: 8 }}>About</div>
                 </NavLink>
               </NavItem>
-              <NavItem style={navItem}>
-                <NavLink
-                  to="/officers"
-                  className="link nexa-light"
-                  style={{ textDecoration: "none" }}
-                  activeStyle={{ color: "#ffa000" }}
+              <UncontrolledDropdown nav inNavbar style={navItem}>
+                <DropdownToggle nav>
+                  <div className="link nexa-light">Members</div>
+                </DropdownToggle>
+                <DropdownMenu
+                  left
+                  style={{ backgroundColor: "rgba(0, 0, 0, .9)" }}
                 >
-                  Officers
-                </NavLink>
-              </NavItem>
+                  <DropdownItem>
+                    <NavLink
+                      to="/officers"
+                      className="link nexa-light"
+                      style={{ textDecoration: "none" }}
+                      activeStyle={{ color: "#ffa000" }}
+                    >
+                      Officers
+                    </NavLink>
+                  </DropdownItem>
+                  <DropdownItem>
+                    {" "}
+                    <NavLink
+                      to="/faculty"
+                      className="link nexa-light"
+                      style={{ textDecoration: "none" }}
+                      activeStyle={{ color: "#ffa000" }}
+                    >
+                      Faculty
+                    </NavLink>
+                  </DropdownItem>
+                  <DropdownItem>
+                    {" "}
+                    <NavLink
+                      to="/eligibles"
+                      className="link nexa-light"
+                      style={{ textDecoration: "none" }}
+                      activeStyle={{ color: "#ffa000" }}
+                    >
+                      Eligibles
+                    </NavLink>
+                  </DropdownItem>
+                  <DropdownItem>
+                    {" "}
+                    <NavLink
+                      to="/members"
+                      className="link nexa-light"
+                      style={{ textDecoration: "none" }}
+                      activeStyle={{ color: "#ffa000" }}
+                    >
+                      Members
+                    </NavLink>
+                  </DropdownItem>
+                </DropdownMenu>
+              </UncontrolledDropdown>
               <NavItem style={navItem}>
                 <NavLink
                   to="/join"
@@ -84,7 +131,7 @@ export default class Example extends React.Component {
                   style={{ textDecoration: "none" }}
                   activeStyle={{ color: "#ffa000" }}
                 >
-                  Join
+                  <div style={{ margin: 8 }}>Join</div>
                 </NavLink>
               </NavItem>
               <NavItem style={navItem}>
@@ -94,7 +141,7 @@ export default class Example extends React.Component {
                   style={{ textDecoration: "none" }}
                   activeStyle={{ color: "#ffa000" }}
                 >
-                  Contact
+                  <div style={{ margin: 8 }}>Contact</div>
                 </NavLink>
               </NavItem>
             </Nav>
@@ -115,7 +162,7 @@ const navbar = {
 };
 
 const navItem = {
-  paddingRight: "1rem",
-  paddingTop: "0.2rem",
-  paddingBottom: "0.2rem"
+  marginRight: "1rem",
+  marginTop: "0.2rem",
+  marginBottom: "0.2rem"
 };
