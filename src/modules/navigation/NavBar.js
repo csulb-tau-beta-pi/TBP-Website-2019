@@ -75,11 +75,8 @@ export default class Example extends React.Component {
                 <DropdownToggle nav>
                   <div className="link nexa-light">Members</div>
                 </DropdownToggle>
-                <DropdownMenu
-                  left
-                  style={{ backgroundColor: "rgba(0, 0, 0, .9)" }}
-                >
-                  <DropdownItem>
+                <DropdownMenu style={{ backgroundColor: "rgba(0, 0, 0, .8)" }}>
+                  <div style={subNavItem}>
                     <NavLink
                       to="/officers"
                       className="link nexa-light"
@@ -88,9 +85,9 @@ export default class Example extends React.Component {
                     >
                       Officers
                     </NavLink>
-                  </DropdownItem>
-                  <DropdownItem>
-                    {" "}
+                  </div>
+
+                  <div style={subNavItem}>
                     <NavLink
                       to="/faculty"
                       className="link nexa-light"
@@ -99,8 +96,8 @@ export default class Example extends React.Component {
                     >
                       Faculty
                     </NavLink>
-                  </DropdownItem>
-                  <DropdownItem>
+                  </div>
+                  <div style={subNavItem}>
                     {" "}
                     <NavLink
                       to="/eligibles"
@@ -110,9 +107,8 @@ export default class Example extends React.Component {
                     >
                       Eligibles
                     </NavLink>
-                  </DropdownItem>
-                  <DropdownItem>
-                    {" "}
+                  </div>
+                  <div style={subNavItem}>
                     <NavLink
                       to="/members"
                       className="link nexa-light"
@@ -121,7 +117,7 @@ export default class Example extends React.Component {
                     >
                       Members
                     </NavLink>
-                  </DropdownItem>
+                  </div>
                 </DropdownMenu>
               </UncontrolledDropdown>
               <NavItem style={navItem}>
@@ -165,4 +161,11 @@ const navItem = {
   marginRight: "1rem",
   marginTop: "0.2rem",
   marginBottom: "0.2rem"
+};
+
+const subNavItem = {
+  textAlign: "center",
+  textTransform: "none",
+  paddingTop: 5,
+  paddingBottom: 5
 };
