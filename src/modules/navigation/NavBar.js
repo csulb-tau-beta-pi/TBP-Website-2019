@@ -71,11 +71,27 @@ export default class Example extends React.Component {
                   <div style={{ margin: 8 }}>About</div>
                 </NavLink>
               </NavItem>
+              <NavItem style={navItem}>
+                <NavLink
+                  to="/join"
+                  className="link nexa-light"
+                  style={{ textDecoration: "none" }}
+                  activeStyle={{ color: "#ffa000" }}
+                >
+                  <div style={{ margin: 8 }}>Join</div>
+                </NavLink>
+              </NavItem>
               <UncontrolledDropdown nav inNavbar style={navItem}>
                 <DropdownToggle nav>
                   <div className="link nexa-light">Members</div>
                 </DropdownToggle>
-                <DropdownMenu style={{ backgroundColor: "rgba(0, 0, 0, .8)" }}>
+                <DropdownMenu
+                  className="dropdown-style"
+                  style={{
+                    backgroundColor: "rgba(0,0,0,0.8)",
+                    borderRadius: 10
+                  }}
+                >
                   <div style={subNavItem}>
                     <NavLink
                       to="/officers"
@@ -86,7 +102,6 @@ export default class Example extends React.Component {
                       Officers
                     </NavLink>
                   </div>
-
                   <div style={subNavItem}>
                     <NavLink
                       to="/faculty"
@@ -98,7 +113,6 @@ export default class Example extends React.Component {
                     </NavLink>
                   </div>
                   <div style={subNavItem}>
-                    {" "}
                     <NavLink
                       to="/eligibles"
                       className="link nexa-light"
@@ -120,16 +134,7 @@ export default class Example extends React.Component {
                   </div>
                 </DropdownMenu>
               </UncontrolledDropdown>
-              <NavItem style={navItem}>
-                <NavLink
-                  to="/join"
-                  className="link nexa-light"
-                  style={{ textDecoration: "none" }}
-                  activeStyle={{ color: "#ffa000" }}
-                >
-                  <div style={{ margin: 8 }}>Join</div>
-                </NavLink>
-              </NavItem>
+
               <NavItem style={navItem}>
                 <NavLink
                   to="/contact"
@@ -168,4 +173,10 @@ const subNavItem = {
   textTransform: "none",
   paddingTop: 5,
   paddingBottom: 5
+};
+
+const dropDownStyle = {
+  backgroundColor: "rgba(0, 0, 0, .8)",
+  transform: "translate(0px,15px)",
+  borderRadius: 10
 };

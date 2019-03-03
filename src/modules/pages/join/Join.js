@@ -42,8 +42,8 @@ class Join extends Component {
                               Eligibility Requirement
                             </li>
                             <ul>
-                              <li>Juniors: 3.4 GPA</li>
-                              <li>Seniors: 3.2 GPA</li>
+                              <li>Top 1/8th of your junior class</li>
+                              <li>Top 1/5th of your senior class</li>
                             </ul>
                             <li style={{ fontWeight: "bold" }}>
                               Initiation Requirement
@@ -118,24 +118,38 @@ class Join extends Component {
               <h3>Eligibility</h3>
               <hr />
               <br />
-              <p>
-                The original eligibility requirements is:
-                <ul>
-                  <li>Top 1/8th of your junior class</li>
-                  <li>Top 1/5th of your senior class</li>
-                </ul>
-                <br />
-                These fractions are approximated to 3.4 GPA for juniors and 3.2
-                GPA for seniors. TBP Theta Chapter will look at the GPA
-                requirement to determine your eligibility.
-                <br /> <br />
-                An invitation will be sent to your
-                <span style={{ fontWeight: "bold" }}> CSULB Student</span> email
-                if you meet the eligibility requirements. If you think that you
-                meet the eligibility requirements but haven't received an email
-                invitation, please come to our orientation or office hours with
-                an unofficial copy of your transcript to confirm your eligility.
-              </p>
+              <div>
+                <p>
+                  <Row style={{ fontSize: 24 }}>
+                    <Col className="text-center">
+                      Top <span style={{ fontSize: 50 }}>1/8</span>
+                      <br />
+                      of junior class
+                    </Col>
+                    <div>
+                      <div style={vertLine} />
+                    </div>
+                    <Col className="text-center">
+                      Top <span style={{ fontSize: 50 }}>1/5</span>
+                      <br />
+                      of senior class
+                    </Col>
+                  </Row>
+                  <br />
+                  <hr />
+                  <br />
+                  An invitation will be sent to your
+                  <span style={{ fontWeight: "bold" }}>
+                    {" "}
+                    CSULB Student email{" "}
+                  </span>
+                  if you meet the eligibility requirements. If you think that
+                  you meet the eligibility requirements but haven't received an
+                  email invitation, please come to our orientation or office
+                  hours with an unofficial copy of your transcript to confirm
+                  your eligility.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -273,4 +287,10 @@ const initiationList = {
 
 const initiationListItem = {
   float: "right"
+};
+
+const vertLine = {
+  borderLeft: "2px solid #ffa000",
+  height: "100%",
+  marginLeft: "-1px"
 };

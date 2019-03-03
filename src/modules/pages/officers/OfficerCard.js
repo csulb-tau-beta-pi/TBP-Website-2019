@@ -8,6 +8,8 @@ import {
   CardSubtitle,
   CardFooter
 } from "reactstrap";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import "../../../assets/fonts/FontStyles.css";
 import "../../components/GlobalStyles.css";
 
@@ -36,7 +38,9 @@ const OfficerCards = props => {
         </CardText>
       </CardBody>
       <CardFooter style={officerEmail} className="nexa-light">
-        {props.officer.email}
+        <a href={"mailto:" + props.officer.email}>
+          <FontAwesomeIcon icon={faEnvelope} size="2x" style={mediaButton} />
+        </a>
       </CardFooter>
     </Card>
   );
@@ -66,7 +70,7 @@ const officerMajor = {
 };
 
 const officerBio = {
-  fontSize: ".9rem",
+  fontSize: ".8rem",
   width: "100%",
   padding: 0
 };
@@ -74,4 +78,9 @@ const officerBio = {
 const officerEmail = {
   backgroundColor: "#DDDDDD",
   fontSize: ".8rem"
+};
+
+const mediaButton = {
+  color: "rgba(0,0,0,0.8)",
+  marginHorizontal: 8
 };
