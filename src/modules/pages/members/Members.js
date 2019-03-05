@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Container } from "reactstrap";
+import { Container, Button } from "reactstrap";
 import Footer from "../../components/Footer";
 import "../../../assets/fonts/FontStyles.css";
 import "../../components/GlobalStyles.css";
@@ -18,6 +18,12 @@ class Members extends Component {
                 </h2>
                 <hr />
                 <br />
+                <Button color="primary" size="sm">
+                  Small Button
+                </Button>{" "}
+                <Button color="secondary" size="lg">
+                  Large Button
+                </Button>{" "}
               </Container>
             </div>
           </div>

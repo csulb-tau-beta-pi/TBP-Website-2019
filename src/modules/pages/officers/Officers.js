@@ -25,6 +25,7 @@ class Officers extends Component {
                 Meet our <span class="em1">Officers</span>
               </h2>
               <hr />
+              <br />
               <Row>{officerCards}</Row>
             </Container>
           </div>

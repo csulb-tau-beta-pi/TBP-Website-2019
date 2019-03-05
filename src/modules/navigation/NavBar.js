@@ -15,7 +15,7 @@ import { NavLink } from "react-router-dom";
 import "./NavBar.css";
 import "../../assets/fonts/FontStyles.css";
 
-export default class Example extends React.Component {
+export default class NavBar extends React.Component {
   constructor(props) {
     super(props);
 
@@ -85,13 +85,7 @@ export default class Example extends React.Component {
                 <DropdownToggle nav>
                   <div className="link nexa-light">Members</div>
                 </DropdownToggle>
-                <DropdownMenu
-                  className="dropdown-style"
-                  style={{
-                    backgroundColor: "rgba(0,0,0,0.8)",
-                    borderRadius: 10
-                  }}
-                >
+                <DropdownMenu style={dropDownStyle}>
                   <div style={subNavItem}>
                     <NavLink
                       to="/officers"
@@ -176,7 +170,7 @@ const subNavItem = {
 };
 
 const dropDownStyle = {
-  backgroundColor: "rgba(0, 0, 0, .8)",
-  transform: "translate(0px,15px)",
-  borderRadius: 10
+  backgroundColor: "rgba(50, 50, 50, .8)",
+  borderWidth: 0,
+  boxShadow: "0px 0px 3px rgba(0,0,0,1)"
 };

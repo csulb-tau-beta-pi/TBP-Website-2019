@@ -1,11 +1,20 @@
 import React, { Component } from "react";
-import { Container } from "reactstrap";
+import { Container, Row, Col } from "reactstrap";
+import FacultyCard from "./FacultyCard";
+import FacultyList from "./FacultyList";
 import Footer from "../../components/Footer";
-import "../../../assets/fonts/FontStyles.css";
-import "../../components/GlobalStyles.css";
+
+const facultyList = FacultyList;
 
 class Faculty extends Component {
   render() {
+    let facultyCards = facultyList.map(facultyInfo => {
+      return (
+        <Col xl="6" className="mb-5">
+          <FacultyCard faculty={facultyInfo} />
+        </Col>
+      );
+    });
     return (
       <div className="page">
         <div className="section-white">
@@ -18,6 +27,7 @@ class Faculty extends Component {
                 </h2>
                 <hr />
                 <br />
+                <Row>{facultyCards}</Row>
               </Container>
             </div>
           </div>
