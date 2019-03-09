@@ -18,8 +18,8 @@ class Members extends Component {
                 </h2>
                 <hr />
                 <br />
-                <Button color="primary" size="sm">
-                  Small Button
+                <Button color="primary" style={{ transform: "scale(0.6)" }}>
+                  <span style={{ fontSize: 20 }}>Small Button</span>
                 </Button>{" "}
                 <Button color="secondary" size="lg">
                   Large Button

@@ -21,21 +21,33 @@ class Footer extends Component {
             />
             <br />
             <br />
-            <a href="https://www.facebook.com/TBPCATheta/" target="_blank">
+            <a
+              href="https://www.facebook.com/TBPCATheta/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FontAwesomeIcon
                 icon={faFacebook}
                 size="2x"
                 style={mediaButton}
               />
             </a>
-            <a href="https://www.instagram.com/csulbtbp/" target="_blank">
+            <a
+              href="https://www.instagram.com/csulbtbp/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FontAwesomeIcon
                 icon={faInstagram}
                 size="2x"
                 style={mediaButton}
               />
             </a>
-            <a href="https://github.com/csulb-tau-beta-pi" target="_blank">
+            <a
+              href="https://github.com/csulb-tau-beta-pi"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FontAwesomeIcon icon={faGithub} size="2x" style={mediaButton} />
             </a>
             <hr style={{ borderColor: "rgba(255,255,255,0.2)" }} />

@@ -8,8 +8,6 @@ import {
   CardSubtitle,
   Button
 } from "reactstrap";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import "../../../assets/fonts/FontStyles.css";
 import "../../components/GlobalStyles.css";
 
@@ -29,15 +27,23 @@ const FacultyCards = props => {
           <CardSubtitle style={facultyDepartment} className="nexa-light">
             {props.faculty.department}
           </CardSubtitle>
-          <CardText>
-            <Button
-              style={{ padding: 0 }}
-              color="warning"
-              size="sm"
-              className="nexa-light"
+          <CardText
+            style={{
+              textAlign: "center",
+              padding: 0,
+              display: "flex",
+              justifyContent: "center"
+            }}
+          >
+            <a
+              href={props.faculty.link}
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              CSULB Staff Page
-            </Button>
+              <Button style={{ transform: "scale(0.7)" }} color="warning">
+                CSULB Staff Page
+              </Button>
+            </a>
           </CardText>
         </CardBody>
       </Card>
@@ -55,27 +61,31 @@ const container = {
 const cardStyle = {
   marginTop: "1.5rem",
   boxShadow: "1px 2px 6px rgba(0,0,0,0.1)",
-  flexDirection: "row"
+  flexDirection: "row",
+  maxHeight: "180px"
 };
 
 const cardBodyStyle = {
+  display: "flex",
+  flexDirection: "column",
   textAlign: "left"
 };
 
 const facultyName = {
-  fontSize: "1.6rem"
+  fontSize: "1.5rem",
+  flex: 1
 };
 
 const facultyDepartment = {
   fontSize: ".8rem",
+  color: "rgba(0,0,0,0.6)",
   letterSpacing: "0.1rem",
-  fontWeight: "bold"
+  fontWeight: "bold",
+  flex: 1
 };
 
 const imageStyle = {
-  maxHeight: "180px",
+  maxHeight: "100%",
   maxWidth: "180px",
-  objectFit: "cover",
-  float: "left",
-  zIndex: 10
+  objectFit: "cover"
 };

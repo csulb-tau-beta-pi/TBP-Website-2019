@@ -8,8 +8,7 @@ import {
   NavItem,
   UncontrolledDropdown,
   DropdownToggle,
-  DropdownMenu,
-  DropdownItem
+  DropdownMenu
 } from "reactstrap";
 import { NavLink } from "react-router-dom";
 import "./NavBar.css";
@@ -55,7 +54,7 @@ export default class NavBar extends React.Component {
                   exact
                   to="/"
                   className="link nexa-light"
-                  style={{ textDecoration: "none" }}
+                  style={{ textDecoration: "none", outline: 0 }}
                   activeStyle={{ color: "#ffa000" }}
                 >
                   <div style={{ margin: 8 }}>Home</div>
@@ -65,7 +64,7 @@ export default class NavBar extends React.Component {
                 <NavLink
                   to="/about"
                   className="link nexa-light"
-                  style={{ textDecoration: "none" }}
+                  style={{ textDecoration: "none", outline: 0 }}
                   activeStyle={{ color: "#ffa000" }}
                 >
                   <div style={{ margin: 8 }}>About</div>
@@ -75,7 +74,7 @@ export default class NavBar extends React.Component {
                 <NavLink
                   to="/join"
                   className="link nexa-light"
-                  style={{ textDecoration: "none" }}
+                  style={{ textDecoration: "none", outline: 0 }}
                   activeStyle={{ color: "#ffa000" }}
                 >
                   <div style={{ margin: 8 }}>Join</div>
@@ -90,7 +89,7 @@ export default class NavBar extends React.Component {
                     <NavLink
                       to="/officers"
                       className="link nexa-light"
-                      style={{ textDecoration: "none" }}
+                      style={{ textDecoration: "none", outline: 0 }}
                       activeStyle={{ color: "#ffa000" }}
                     >
                       Officers
@@ -100,7 +99,7 @@ export default class NavBar extends React.Component {
                     <NavLink
                       to="/faculty"
                       className="link nexa-light"
-                      style={{ textDecoration: "none" }}
+                      style={{ textDecoration: "none", outline: 0 }}
                       activeStyle={{ color: "#ffa000" }}
                     >
                       Faculty
@@ -110,7 +109,7 @@ export default class NavBar extends React.Component {
                     <NavLink
                       to="/eligibles"
                       className="link nexa-light"
-                      style={{ textDecoration: "none" }}
+                      style={{ textDecoration: "none", outline: 0 }}
                       activeStyle={{ color: "#ffa000" }}
                     >
                       Eligibles
@@ -120,7 +119,7 @@ export default class NavBar extends React.Component {
                     <NavLink
                       to="/members"
                       className="link nexa-light"
-                      style={{ textDecoration: "none" }}
+                      style={{ textDecoration: "none", outline: 0 }}
                       activeStyle={{ color: "#ffa000" }}
                     >
                       Members
@@ -133,7 +132,7 @@ export default class NavBar extends React.Component {
                 <NavLink
                   to="/contact"
                   className="link nexa-light"
-                  style={{ textDecoration: "none" }}
+                  style={{ textDecoration: "none", outline: 0 }}
                   activeStyle={{ color: "#ffa000" }}
                 >
                   <div style={{ margin: 8 }}>Contact</div>
