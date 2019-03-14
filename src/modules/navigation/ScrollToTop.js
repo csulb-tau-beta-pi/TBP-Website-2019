@@ -13,7 +13,8 @@ import {
 class ScrollToTop extends Component {
   componentDidUpdate(prevProps) {
     if (this.props.location.pathname !== prevProps.location.pathname) {
-      animateScroll.scrollToTop();
+      window.scroll(0, 0);
+      //animateScroll.scrollToTop();
     }
   }
   render() {

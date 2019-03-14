@@ -18,8 +18,17 @@ class Eligibles extends Component {
                 </h2>
                 <hr />
                 <br />
-                <h3>Juniors</h3>
-                <h3>Seniors</h3>
+                <table>
+                  <thread>
+                    <tr>
+                      <th>Last Name</th>
+                      <th>First Name</th>
+                      <th>Major</th>
+                      <th>Academic Level</th>
+                    </tr>
+                  </thread>
+                  <tbody />
+                </table>
               </Container>
             </div>
           </div>

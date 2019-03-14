@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { HashRouter, Route, Switch } from "react-router-dom";
 import ScrollToTop from "./ScrollToTop";
 import NavBar from "./NavBar";
 import Home from "../pages/home/Home";
@@ -19,35 +19,23 @@ class Routes extends Component {
   }
   render() {
     return (
-      <BrowserRouter>
+      <HashRouter>
         <ScrollToTop>
           <div>
             <NavBar />
-            <Route
-              render={({ location }) => (
-                <TransitionGroup>
-                  <CSSTransition
-                    key={location.key}
-                    timeout={300}
-                    classNames="fade"
-                  >
-                    <Switch location={location}>
-                      <Route exact path="/" component={Home} />
-                      <Route path="/about" component={About} />
-                      <Route path="/officers" component={Officers} />
-                      <Route path="/faculty" component={Faculty} />
-                      <Route path="/eligibles" component={Eligibles} />
-                      <Route path="/members" component={Members} />
-                      <Route path="/join" component={Join} />
-                      <Route path="/contact" component={Contact} />
-                    </Switch>
-                  </CSSTransition>
-                </TransitionGroup>
-              )}
-            />
+            <Switch>
+              <Route exact path="/" component={Home} />
+              <Route path="/about" component={About} />
+              <Route path="/officers" component={Officers} />
+              <Route path="/faculty" component={Faculty} />
+              <Route path="/eligibles" component={Eligibles} />
+              <Route path="/members" component={Members} />
+              <Route path="/join" component={Join} />
+              <Route path="/contact" component={Contact} />
+            </Switch>
           </div>
         </ScrollToTop>
-      </BrowserRouter>
+      </HashRouter>
     );
   }
 }
