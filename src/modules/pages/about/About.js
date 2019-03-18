@@ -20,10 +20,10 @@ class About extends Component {
       <div className="page">
         <div className="section-white">
           <div className="w-80">
-            <div class="col-12 narrow text-center">
+            <div className="col-12 narrow text-center">
               <hr />
               <h2>
-                <span class="em1">About</span> Tau Beta Pi
+                <span className="em1">About</span> Tau Beta Pi
               </h2>
               <hr />
               <p>
@@ -41,6 +41,8 @@ class About extends Component {
               </p>
               <a
                 className="nexa-light btn btn-outline-dark btn-lg"
+                target="_blank"
+                rel="noopener noreferrer"
                 href="https://www.tbp.org/home.cfm"
               >
                 TBP National Website
@@ -70,43 +72,41 @@ class About extends Component {
                 disciplines.
               </p>
               <h4>The Fundamental Canons</h4>
-              <p>
-                <ListGroup style={{ textAlign: "left" }}>
-                  <ListGroupItem>
-                    1 | Engineers shall hold paramount the safety, health, and
-                    welfare of the public in the performance of their
-                    professional duties.
-                  </ListGroupItem>
-                  <ListGroupItem>
-                    2 | Engineers shall perform services only in the areas of
-                    their competence.
-                  </ListGroupItem>
-                  <ListGroupItem>
-                    3 | Engineers shall issue public statements only in an
-                    objective and truthful manner.
-                  </ListGroupItem>
-                  <ListGroupItem>
-                    4 | Engineers shall act in professional matters for each
-                    employer or client as faithful agents or trustees, and shall
-                    avoid conflicts of interest.
-                  </ListGroupItem>
-                  <ListGroupItem>
-                    5 | Engineers shall build their professional reputation on
-                    the merit of their services and shall not compete unfairly
-                    with others.
-                  </ListGroupItem>
-                  <ListGroupItem>
-                    6 | Engineers shall act in such a manner as to uphold and
-                    enhance the honor, integrity, and dignity of the profession.
-                  </ListGroupItem>
-                  <ListGroupItem>
-                    7 | Engineers shall continue their professional development
-                    through- out their careers and shall provide opportunities
-                    for the professional development of those engineers under
-                    their supervision.
-                  </ListGroupItem>
-                </ListGroup>
-              </p>
+              <ListGroup style={{ textAlign: "left", margin: "1rem" }}>
+                <ListGroupItem>
+                  1 | Engineers shall hold paramount the safety, health, and
+                  welfare of the public in the performance of their professional
+                  duties.
+                </ListGroupItem>
+                <ListGroupItem>
+                  2 | Engineers shall perform services only in the areas of
+                  their competence.
+                </ListGroupItem>
+                <ListGroupItem>
+                  3 | Engineers shall issue public statements only in an
+                  objective and truthful manner.
+                </ListGroupItem>
+                <ListGroupItem>
+                  4 | Engineers shall act in professional matters for each
+                  employer or client as faithful agents or trustees, and shall
+                  avoid conflicts of interest.
+                </ListGroupItem>
+                <ListGroupItem>
+                  5 | Engineers shall build their professional reputation on the
+                  merit of their services and shall not compete unfairly with
+                  others.
+                </ListGroupItem>
+                <ListGroupItem>
+                  6 | Engineers shall act in such a manner as to uphold and
+                  enhance the honor, integrity, and dignity of the profession.
+                </ListGroupItem>
+                <ListGroupItem>
+                  7 | Engineers shall continue their professional development
+                  through- out their careers and shall provide opportunities for
+                  the professional development of those engineers under their
+                  supervision.
+                </ListGroupItem>
+              </ListGroup>
             </div>
           </div>
         </div>

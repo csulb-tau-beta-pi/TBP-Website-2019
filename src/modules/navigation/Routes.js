@@ -10,8 +10,7 @@ import Eligibles from "../pages/eligibles/Eligibles";
 import Members from "../pages/members/Members";
 import Join from "../pages/join/Join";
 import Contact from "../pages/contact/Contact";
-import { CSSTransition, TransitionGroup } from "react-transition-group";
-import "./Routes.css";
+
 class Routes extends Component {
   constructor(props) {
     super(props);

@@ -6,6 +6,7 @@ import {
   CardTitle,
   CardText,
   CardSubtitle,
+  CardFooter,
   Button
 } from "reactstrap";
 import "../../../assets/fonts/FontStyles.css";
@@ -34,19 +35,21 @@ const FacultyCards = props => {
               display: "flex",
               justifyContent: "center"
             }}
-          >
-            <a
-              href={props.faculty.link}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Button style={{ transform: "scale(0.7)" }} color="warning">
-                CSULB Staff Page
-              </Button>
-            </a>
-          </CardText>
+          />
         </CardBody>
       </Card>
+      <a
+        href={props.faculty.link}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="link"
+      >
+        <CardFooter>
+          <Button color="warning" style={buttonStyle}>
+            CSULB Staff Page
+          </Button>
+        </CardFooter>
+      </a>
     </div>
   );
 };
@@ -56,13 +59,14 @@ export default FacultyCards;
 const container = {
   flex: 1,
   alignItems: "center",
-  justifyCotent: "center"
+  justifyCotent: "center",
+  boxShadow: "1px 2px 6px rgba(0,0,0,0.1)"
 };
 const cardStyle = {
   marginTop: "1.5rem",
-  boxShadow: "1px 2px 6px rgba(0,0,0,0.1)",
   flexDirection: "row",
-  maxHeight: "180px"
+  maxHeight: "180px",
+  borderRadius: 0
 };
 
 const cardBodyStyle = {
@@ -72,7 +76,7 @@ const cardBodyStyle = {
 };
 
 const facultyName = {
-  fontSize: "1.5rem",
+  fontSize: "1.2rem",
   flex: 1
 };
 
@@ -86,6 +90,11 @@ const facultyDepartment = {
 
 const imageStyle = {
   maxHeight: "100%",
-  maxWidth: "180px",
-  objectFit: "cover"
+  maxWidth: "120px",
+  objectFit: "cover",
+  borderRadius: 0
+};
+
+const buttonStyle = {
+  borderRadius: 30
 };

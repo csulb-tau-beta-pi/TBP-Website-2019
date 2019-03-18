@@ -14,7 +14,7 @@ class Members extends Component {
               <Container fluid>
                 <hr />
                 <h2>
-                  List of <span class="em1">Members</span>
+                  List of <span className="em1">Members</span>
                 </h2>
                 <hr />
                 <br />

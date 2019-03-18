@@ -10,7 +10,7 @@ class Officers extends Component {
   render() {
     let officerCards = officerList.map(officerInfo => {
       return (
-        <Col lg="4" sm="6" className="mb-5">
+        <Col lg="4" sm="6" className="mb-5" key={officerInfo.name}>
           <OfficerCard officer={officerInfo} />
         </Col>
       );
@@ -22,7 +22,7 @@ class Officers extends Component {
             <Container fluid>
               <hr />
               <h2>
-                Meet our <span class="em1">Officers</span>
+                Meet our <span className="em1">Officers</span>
               </h2>
               <hr />
               <br />

@@ -3,7 +3,6 @@ import {
   Collapse,
   Navbar,
   NavbarToggler,
-  NavbarBrand,
   Nav,
   NavItem,
   UncontrolledDropdown,
@@ -33,15 +32,13 @@ export default class NavBar extends React.Component {
     return (
       <div>
         <Navbar style={navbar} fixed="top" light expand="md">
-          <NavbarBrand className="mr-auto">
-            <NavLink to="/">
-              <img
-                src={require("../../assets/images/icons/small-logo-chapter-yellow-white.png")}
-                style={{ height: "3rem" }}
-                alt="CSULB Tau Beta Pi"
-              />
-            </NavLink>
-          </NavbarBrand>
+          <NavLink to="/">
+            <img
+              src={require("../../assets/images/icons/small-logo-chapter-yellow-white.png")}
+              style={{ height: "3rem" }}
+              alt="CSULB Tau Beta Pi"
+            />
+          </NavLink>
           <NavbarToggler
             onClick={this.toggleNavbar}
             style={{ backgroundColor: "#ffa000", color: "white" }}
@@ -127,7 +124,6 @@ export default class NavBar extends React.Component {
                   </div>
                 </DropdownMenu>
               </UncontrolledDropdown>
-
               <NavItem style={navItem}>
                 <NavLink
                   to="/contact"

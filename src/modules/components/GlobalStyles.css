@@ -13,6 +13,10 @@ h3 {
   color: #59260b !important;
 }
 
+a {
+  text-decoration: none;
+}
+
 h4 {
   font-size: 2rem !important;
   font-family: "Montserrat", Helvetica, sans-serif;
@@ -34,6 +38,7 @@ p {
 }
 
 .page {
+  font-family: "Montserrat", Helvetica, sans-serif;
   position: absolute;
   padding-top: 4.6rem;
   left: 0;

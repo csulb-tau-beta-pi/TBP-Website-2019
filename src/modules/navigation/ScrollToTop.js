@@ -1,14 +1,5 @@
-import React, { Component } from "react";
+import { Component } from "react";
 import { withRouter } from "react-router";
-import * as Scroll from "react-scroll";
-import {
-  Link,
-  Element,
-  Events,
-  animateScroll,
-  scrollSpy,
-  scroller
-} from "react-scroll";
 
 class ScrollToTop extends Component {
   componentDidUpdate(prevProps) {
