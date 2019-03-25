@@ -1,3 +1,4 @@
+//Update Faculty List Here
 const facultyList = [
   {
     imgSource:

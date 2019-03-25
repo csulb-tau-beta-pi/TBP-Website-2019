@@ -9,7 +9,9 @@ import Faculty from "../pages/faculty/Faculty";
 import Eligibles from "../pages/eligibles/Eligibles";
 import Members from "../pages/members/Members";
 import Join from "../pages/join/Join";
+import Calender from "../pages/calender/Calender";
 import Contact from "../pages/contact/Contact";
+import Faq from "../pages/faq/Faq";
 
 class Routes extends Component {
   constructor(props) {
@@ -30,7 +32,9 @@ class Routes extends Component {
               <Route path="/eligibles" component={Eligibles} />
               <Route path="/members" component={Members} />
               <Route path="/join" component={Join} />
+              <Route path="/calender" component={Calender} />
               <Route path="/contact" component={Contact} />
+              <Route path="/faq" component={Faq} />
             </Switch>
           </div>
         </ScrollToTop>

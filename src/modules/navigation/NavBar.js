@@ -124,16 +124,43 @@ export default class NavBar extends React.Component {
                   </div>
                 </DropdownMenu>
               </UncontrolledDropdown>
-              <NavItem style={navItem}>
-                <NavLink
-                  to="/contact"
-                  className="link nexa-light"
-                  style={{ textDecoration: "none", outline: 0 }}
-                  activeStyle={{ color: "#ffa000" }}
-                >
-                  <div style={{ margin: 8 }}>Contact</div>
-                </NavLink>
-              </NavItem>
+              <UncontrolledDropdown nav inNavbar style={navItem}>
+                <DropdownToggle nav>
+                  <div className="link nexa-light">Others</div>
+                </DropdownToggle>
+                <DropdownMenu style={dropDownStyle}>
+                  <div style={subNavItem}>
+                    <NavLink
+                      to="/calender"
+                      className="link nexa-light"
+                      style={{ textDecoration: "none", outline: 0 }}
+                      activeStyle={{ color: "#ffa000" }}
+                    >
+                      Calender
+                    </NavLink>
+                  </div>
+                  <div style={subNavItem}>
+                    <NavLink
+                      to="/contact"
+                      className="link nexa-light"
+                      style={{ textDecoration: "none", outline: 0 }}
+                      activeStyle={{ color: "#ffa000" }}
+                    >
+                      Contact
+                    </NavLink>
+                  </div>
+                  <div style={subNavItem}>
+                    <NavLink
+                      to="/faq"
+                      className="link nexa-light"
+                      style={{ textDecoration: "none", outline: 0 }}
+                      activeStyle={{ color: "#ffa000" }}
+                    >
+                      FAQ
+                    </NavLink>
+                  </div>
+                </DropdownMenu>
+              </UncontrolledDropdown>
             </Nav>
           </Collapse>
         </Navbar>

@@ -1,12 +1,14 @@
 import React, { Component } from "react";
-import { Container, Row, Col } from "reactstrap";
+import { Container, Row, Col, Button } from "reactstrap";
 import OfficerCard from "./OfficerCard";
 import OfficerList from "./OfficerList";
 import Footer from "../../components/Footer";
+import officerHourPDF from "../../../assets/docs/schedule-s2019.pdf";
 
 const officerList = OfficerList;
 
 class Officers extends Component {
+  onOfficerHoursClick = () => {};
   render() {
     let officerCards = officerList.map(officerInfo => {
       return (
@@ -25,6 +27,17 @@ class Officers extends Component {
                 Meet our <span className="em1">Officers</span>
               </h2>
               <hr />
+              <a
+                href={officerHourPDF}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ textDecoration: "none" }}
+              >
+                <Button block outline color="secondary" style={buttonStyle}>
+                  Officer Hours
+                </Button>{" "}
+              </a>
+              <hr />
               <br />
               <Row>{officerCards}</Row>
             </Container>
@@ -37,3 +50,7 @@ class Officers extends Component {
 }
 
 export default Officers;
+
+const buttonStyle = {
+  borderRadius: 5
+};

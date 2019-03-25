@@ -76,7 +76,7 @@ const cardBodyStyle = {
 };
 
 const facultyName = {
-  fontSize: "1.2rem",
+  fontSize: "1.6rem",
   flex: 1
 };
 
