@@ -8,25 +8,6 @@ import excel from "xlsx";
 
 class Eligibles extends Component {
   render() {
-    let logExcel = () => {
-      let f = "../../../assets/docs/S19 Juniors.xlsx";
-      var name = f.name;
-      const reader = new FileReader();
-      reader.onload = evt => {
-        //evt = on_file_select event
-        /* Parse data */
-        const bstr = evt.target.result;
-        const wb = XLSX.read(bstr, { type: "binary" });
-        /* Get first worksheet */
-        const wsname = wb.SheetNames[0];
-        const ws = wb.Sheets[wsname];
-        /* Convert array of arrays */
-        const data = XLSX.utils.sheet_to_csv(ws, { header: 1 });
-        /* Update state */
-        console.log("Data>>>" + data);
-      };
-      reader.readAsBinaryString(f);
-    };
     return (
       <div className="page">
         <div className="section-white">
@@ -39,7 +20,7 @@ class Eligibles extends Component {
                 </h2>
                 <hr />
                 <br />
-                <button onClick={logExcel}>Hello</button>
+                <p>Will have it up before Spring Break</p>
               </Container>
             </div>
           </div>
