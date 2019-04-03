@@ -81,7 +81,7 @@ export default class NavBar extends React.Component {
                 <DropdownToggle nav>
                   <div className="link nexa-light">Members</div>
                 </DropdownToggle>
-                <DropdownMenu style={dropDownStyle}>
+                <DropdownMenu right style={dropDownStyle}>
                   <div style={subNavItem}>
                     <NavLink
                       to="/officers"
@@ -128,7 +128,7 @@ export default class NavBar extends React.Component {
                 <DropdownToggle nav>
                   <div className="link nexa-light">Others</div>
                 </DropdownToggle>
-                <DropdownMenu style={dropDownStyle}>
+                <DropdownMenu right style={dropDownStyle}>
                   <div style={subNavItem}>
                     <NavLink
                       to="/calender"

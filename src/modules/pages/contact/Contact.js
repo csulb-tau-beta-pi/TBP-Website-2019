@@ -21,7 +21,7 @@ class Contact extends Component {
                 <Row>
                   <Col lg="6">
                     <img
-                      alt="Office Image"
+                      alt="Office"
                       className="img-fluid"
                       src={require("../../../assets/images/office.jpg")}
                     />

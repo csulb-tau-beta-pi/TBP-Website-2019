@@ -221,8 +221,9 @@ class Join extends Component {
                 into Tau Beta Pi.
                 <br />
                 <br />
-                You will most likely spend the majority of the time polishing
-                your bent during the initiation period. Here are some
+                After paying your initiation fee, you will receive a personal
+                bent. You will (most likely) spend the majority of the time
+                polishing your bent during the initiation period. Here are some
                 suggestions for polishing the bent:
                 <br />
               </p>

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Container, Button } from "reactstrap";
+import { Container } from "reactstrap";
 import Footer from "../../components/Footer";
 import "../../../assets/fonts/FontStyles.css";
 import "../../components/GlobalStyles.css";

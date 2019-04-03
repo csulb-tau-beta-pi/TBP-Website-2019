@@ -8,5 +8,10 @@ const eligiblesList = [
     firstName: "Laith",
     lastName: "Al Maawali",
     middleName: ""
+  },
+  {
+    firstName: "Mohammed Majid Mohammed",
+    lastName: "Al Mahrouqi",
+    middleName: ""
   }
 ];

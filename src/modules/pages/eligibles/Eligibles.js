@@ -3,8 +3,6 @@ import { Container } from "reactstrap";
 import Footer from "../../components/Footer";
 import "../../../assets/fonts/FontStyles.css";
 import "../../components/GlobalStyles.css";
-import * as XLSX from "xlsx";
-import excel from "xlsx";
 
 class Eligibles extends Component {
   render() {
@@ -20,7 +18,6 @@ class Eligibles extends Component {
                 </h2>
                 <hr />
                 <br />
-                <p>Will have it up before Spring Break</p>
               </Container>
             </div>
           </div>
