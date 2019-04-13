@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Container, Col, Row } from "reactstrap";
+import Footer from "../../components/Footer";
 
 class Contact extends Component {
   constructor(props) {
@@ -47,6 +48,7 @@ class Contact extends Component {
             </div>
           </div>
         </div>
+        <Footer />
       </div>
     );
   }

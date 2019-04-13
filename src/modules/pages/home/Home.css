@@ -6,6 +6,8 @@
   background-color: "black";
   background-image: url(../../../assets/images/initiation-f2018.jpg);
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   top: 0;
   z-index: -1;
 }

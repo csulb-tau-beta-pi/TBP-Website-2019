@@ -1,14 +1,40 @@
+// Look at "BigCalender" documentation to learn more about its API
+
 import React, { Component } from "react";
+import BigCalendar from "react-big-calendar";
+import moment from "moment";
+import myEventsList from "./EventsList";
+import Footer from "../../components/Footer";
+
+const localizer = BigCalendar.momentLocalizer(moment);
 
 class Calender extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
   render() {
     return (
       <div className="page">
-        <p>Calender</p>
+        <div className="section-white">
+          <div className="w-80">
+            <div className="col-12 narrow text-center">
+              <hr />
+              <h2>
+                The <span className="em1">Calender</span>
+              </h2>
+              <hr />
+              <br />
+              <div style={{ height: 800 }}>
+                <BigCalendar
+                  localizer={localizer}
+                  events={myEventsList}
+                  step={60}
+                  showMultiDayTimes
+                  startAccessor="start"
+                  endAccessor="end"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <Footer />
       </div>
     );
   }
