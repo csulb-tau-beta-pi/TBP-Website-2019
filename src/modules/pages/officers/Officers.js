@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Container, Row, Col, Button } from "reactstrap";
 import OfficerCard from "./OfficerCard";
-import OfficerList from "./OfficerList";
+import OfficerList from "./data/OfficerList";
 import Footer from "../../components/Footer";
 import officerHourPDF from "../../../assets/docs/schedule-s2019.pdf";
 

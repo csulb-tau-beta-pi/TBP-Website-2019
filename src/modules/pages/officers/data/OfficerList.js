@@ -1,7 +1,7 @@
 //Enter Officer Information here
 const officerList = [
   {
-    imgSource: require("../../../assets/images/officers/harrisonfrank.jpg"),
+    imgSource: require("../../../../assets/images/officers/harrisonfrank.jpg"),
     name: "Harrison Frank",
     position: "President",
     major: "Aerospace Engineering",
@@ -10,7 +10,7 @@ const officerList = [
     email: "president.csulbtbp@gmail.com"
   },
   {
-    imgSource: require("../../../assets/images/officers/chrissam.jpg"),
+    imgSource: require("../../../../assets/images/officers/chrissam.jpg"),
     name: "Christopher Sam",
     position: "External Vice-President",
     major: "Electrical & Biomedical Engineering",
@@ -19,7 +19,7 @@ const officerList = [
     email: "vicepresidentexternal.csulbtbp@gmail.com"
   },
   {
-    imgSource: require("../../../assets/images/officers/nikkinguyen.jpg"),
+    imgSource: require("../../../../assets/images/officers/nikkinguyen.jpg"),
     name: "Nikki Nguyen",
     position: "Internal Vice-President",
     major: "Computer Science",
@@ -28,7 +28,7 @@ const officerList = [
     email: "vicepresidentinternal.csulbtbp@gmail.com"
   },
   {
-    imgSource: require("../../../assets/images/officers/anthonytruong.jpg"),
+    imgSource: require("../../../../assets/images/officers/anthonytruong.jpg"),
     name: "Anthony Truong",
     position: "Corresponding Secretary",
     major: "Aerospace Engineering",
@@ -37,7 +37,7 @@ const officerList = [
     email: "corresponding.secretary.csulbtbp@gmail.com"
   },
   {
-    imgSource: require("../../../assets/images/officers/matthewchu.jpg"),
+    imgSource: require("../../../../assets/images/officers/matthewchu.jpg"),
     name: "Mathew Chu",
     position: "Webmaster",
     major: "Computer Science",
@@ -46,7 +46,7 @@ const officerList = [
     email: "webmaster.csulbtbp@gmail.com"
   },
   {
-    imgSource: require("../../../assets/images/officers/ryanvalera.jpg"),
+    imgSource: require("../../../../assets/images/officers/ryanvalera.jpg"),
     name: "Ryan Valera",
     position: "Shadow President",
     major: "Mechanical Engineering",
@@ -55,7 +55,7 @@ const officerList = [
     email: "president.csulbtbp@gmail.com"
   },
   {
-    imgSource: require("../../../assets/images/officers/jeffreynguyen.jpg"),
+    imgSource: require("../../../../assets/images/officers/jeffreynguyen.jpg"),
     name: "Jeffrey Nguyen",
     position: "Shadow External Vice-President",
     major: "Biomedical Engineering",
@@ -64,7 +64,7 @@ const officerList = [
     email: "vicepresidentexternal.csulbtbp@gmail.com"
   },
   {
-    imgSource: require("../../../assets/images/officers/madisonkane.jpg"),
+    imgSource: require("../../../../assets/images/officers/madisonkane.jpg"),
     name: "Madison Kane",
     position: "Shadow Treasurer",
     major: "Biomedical Engineering",
@@ -73,7 +73,7 @@ const officerList = [
     email: "treasurer.csulbtbp@gmail.com"
   },
   {
-    imgSource: require("../../../assets/images/officers/ericdo.jpg"),
+    imgSource: require("../../../../assets/images/officers/ericdo.jpg"),
     name: "Eric Do",
     position: "Shadow Webmaster",
     major: "Computer Science",
@@ -82,7 +82,7 @@ const officerList = [
     email: "webmaster.csulbtbp@gmail.com"
   },
   {
-    imgSource: require("../../../assets/images/officers/nicholasnguyen.jpg"),
+    imgSource: require("../../../../assets/images/officers/nicholasnguyen.jpg"),
     name: "Nicholas Nguyen",
     position: "Event Chair",
     major: "Electrical Engineering",
@@ -91,7 +91,7 @@ const officerList = [
     email: "event.csulbtbp@gmail.com"
   },
   {
-    imgSource: require("../../../assets/images/officers/evelynmuro.jpg"),
+    imgSource: require("../../../../assets/images/officers/evelynmuro.jpg"),
     name: "Evelyn Muro",
     position: "K-12 MindSET Chair",
     major: "Chemical Engineering",
@@ -100,7 +100,7 @@ const officerList = [
     email: "volunteer.csulbtbp@gmail.com"
   },
   {
-    imgSource: require("../../../assets/images/officers/seanblydthansen.jpg"),
+    imgSource: require("../../../../assets/images/officers/seanblydthansen.jpg"),
     name: "Sean Blydt-Hansen",
     position: "Recruitment Chair",
     major: "Chemical Engineering",
@@ -109,7 +109,7 @@ const officerList = [
     email: "recruitment.csulbtbp@gmail.com"
   },
   {
-    imgSource: require("../../../assets/images/officers/minhkhoavu.jpg"),
+    imgSource: require("../../../../assets/images/officers/minhkhoavu.jpg"),
     name: "Minhkhoa Vu",
     position: "Historian",
     major: "Computer Science",
