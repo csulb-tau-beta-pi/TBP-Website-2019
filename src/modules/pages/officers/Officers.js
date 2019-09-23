@@ -3,7 +3,7 @@ import { Container, Row, Col, Button } from "reactstrap";
 import OfficerCard from "./OfficerCard";
 import OfficerList from "./OfficerList";
 import Footer from "../../components/Footer";
-import officerHourPDF from "../../../assets/docs/schedule-s2019.pdf";
+import officerHourPDF from "../../../assets/docs/Fall2019TBPSchedule.pdf";
 
 const officerList = OfficerList;
 
