@@ -17,7 +17,7 @@ class Calender extends Component {
             <div className="col-12 narrow text-center">
               <hr />
               <h2>
-                The <span className="em1">Calender</span>
+                The <span className="em1">Calendar</span>
               </h2>
               <hr />
               <br />

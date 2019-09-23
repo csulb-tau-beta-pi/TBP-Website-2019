@@ -136,7 +136,7 @@ export default class NavBar extends React.Component {
                       style={{ textDecoration: "none", outline: 0 }}
                       activeStyle={{ color: "#ffa000" }}
                     >
-                      Calender
+                      Calendar
                     </NavLink>
                   </div>
                   <div style={subNavItem}>

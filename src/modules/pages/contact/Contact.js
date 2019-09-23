@@ -38,8 +38,8 @@ class Contact extends Component {
                     </p>
                     <p>
                       <b>
-                        Check out the Officer Page for the officer's email and
-                        their officer hours.
+                        Check out the officers page for an officer's email and
+                        officer hours.
                       </b>
                     </p>
                   </Col>

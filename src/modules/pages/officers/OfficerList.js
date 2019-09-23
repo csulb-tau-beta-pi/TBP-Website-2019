@@ -33,7 +33,7 @@ const officerList = [
     position: "Corresponding Secretary",
     major: "Chemical Engineering",
     bio:
-      "Hello, I am a senior Chemical Engineering student . In the summer of 2019, I interned at the LA Fire Department as a Environmental and  Occupational Health Intern. I would regulate buisnesses and make they're in compliance with county regulations. My hobbies include weightlifting and setting up live sound gigs.",
+      "Hello, I am a senior Chemical Engineering student. In the summer of 2019, I interned at the LA Fire Department as a Environmental and  Occupational Health Intern. I would regulate buisnesses and make they're in compliance with county regulations. My hobbies include weightlifting and setting up live sound gigs.",
     email: "corresponding.secretary.csulbtbp@gmail.com"
   },
   {
@@ -61,7 +61,7 @@ const officerList = [
     major: "Electrical Engineering",
     bio:
       "Salutations. I am currently a senior with an emphasis in Controls and DSP. In my free time, I code using different software programs and tools to keep up with the more sophisticated programs. If you have any further question or if you need of any assistance with coding, drop by and we can figure some things out together. I am also serving as an HKN officer to help distinguish those who excel in EE, CS, and CE. Side note, I have trained for over 10 dedicated years in martial arts and stand as a 2nd level black belt with confidence to defend!",
-    email: "vicepresidentexternal.csulbtbp@gmail.com"
+    email: "vicepresidentinternal.csulbtbp@gmail.com"
   },
   {
     imgSource: require("../../../assets/images/officers/tannermindrum.jpg"),
@@ -96,7 +96,7 @@ const officerList = [
     position: "Historian & Social Media Chair",
     major: "Biomedical Engineering",
     bio:
-      "-",
+      "Hello, my name is August and I’m a 4th year undergraduate student conducting research in Dr. Ayala’s biomedical engineering lab. I work with biomaterials and focus on designing and analyzing 3D constructs for muscle repair applications. In my free time, I enjoying listening to music, playing basketball, and visiting with friends!",
     email: "historian.csulbtbp@gmail.com"
   }
 ];
