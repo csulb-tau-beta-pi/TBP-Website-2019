@@ -51,7 +51,7 @@ class Join extends Component {
                             <li>Polish Individual Bent</li>
                             <li>Polish Big Bent</li>
                             <li>Attend an event/workshop</li>
-                            <li>Volunteer for community service (1 hour)</li>
+                            <li>Volunteer for community service (2 hours)</li>
                             <li>Sign up and attend Officer Interview</li>
                             <li>Attend Tau Beta Pi Induction Ceremony</li>
                           </ul>
