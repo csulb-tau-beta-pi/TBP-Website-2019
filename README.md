@@ -2,7 +2,7 @@
 
 This is the new, updated website for CSULB Tau Beta Pi. It is currently work in progress.
 
-[Link to the new website](https://csulb-tau-beta-pi.github.io/)
+[Link to the website](http://www.tbpcatheta.org/)
 
 ## Developer Quick Start
 
